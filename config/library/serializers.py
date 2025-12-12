@@ -3,7 +3,7 @@ from .models import Book, Transaction
 from django.contrib.auth.models import User
 
 
-class BookSerializer(serializers.ModelSerializers):
+class BookSerializer(serializers.ModelSerializer):
      class Meta:
           model = Book
           fields = '__all__'
